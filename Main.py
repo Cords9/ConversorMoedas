@@ -1,4 +1,5 @@
 import customtkinter
+from consultar_moedas import nomes_moedas
 
 # Configuração da Tela
 tela = customtkinter.CTk()
@@ -19,8 +20,8 @@ moeda_final_txt = customtkinter.CTkLabel(tela, text="Selecione a Moeda de Conver
 btn_converter = customtkinter.CTkButton(tela, text="Converter", command=converter_moedas , fg_color="#0056b3",hover_color="#007BFF")
 
 #Campos de moedas
-moeda_inicial = customtkinter.CTkOptionMenu(tela, values=["Dólar", "Euro", "Real"])
-moeda_final = customtkinter.CTkOptionMenu(tela, values=["Dólar", "Euro", "Real"])
+moeda_inicial = customtkinter.CTkOptionMenu(tela, values=nomes_moedas)
+moeda_final = customtkinter.CTkOptionMenu(tela, values=nomes_moedas)
 
 #Mostrar na tela
 titulo.pack(padx=10, pady=10)
