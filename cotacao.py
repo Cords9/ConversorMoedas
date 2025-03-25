@@ -2,9 +2,9 @@ import requests
 
 
 
-def converter_moedas(moeda_inicio,moeda_fim):
+def cotar_moedas(moeda_inicio,moeda_fim):
     
-    link = "https://economia.awesomeapi.com.br/last/{moeda_inicio}-{moeda_fim}"
+    link = f"https://economia.awesomeapi.com.br/last/{moeda_inicio}-{moeda_fim}"
 
 
     requicição = requests.get(link)
